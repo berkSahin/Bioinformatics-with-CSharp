@@ -10,8 +10,7 @@ namespace Bioinfarmatics.Library.Core
     public class Sequence:SequenceBase
     {
         public Direction Direction;
-        public Alphabet Alphabet;
-        public Stats Stats;
+        public Alphabet Alphabet; 
 
         public override string Content
         {
@@ -27,10 +26,6 @@ namespace Bioinfarmatics.Library.Core
                 Direction = new Direction();
                 if (!Alphabet.IsDNA())
                     Direction.Complement();
-                Stats = new Stats(value);
-                //var t = Stats.Lenght();
-                //var tt = Stats.Frekans(Alphabet.Letters);
-                //Stats.Sknewness(BasePair.GC, 10000);
             }
         }
 
@@ -38,7 +33,6 @@ namespace Bioinfarmatics.Library.Core
         {
             Title = title;
             Content = content;
-      
         }
     }
 }
