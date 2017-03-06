@@ -36,7 +36,6 @@ namespace Bioinfarmatics.Library.Core
         }
 
         public bool IsDNA() { return Letters.Where(x => x.Equals("T")).FirstOrDefault() != null ? true : false; }
-
         public bool IsRNA() { return Letters.Where(x => x.Equals("T")).FirstOrDefault() != null ? true : false; }
         public bool IsProtein() { return false; }
     }
