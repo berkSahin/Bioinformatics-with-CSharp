@@ -40,16 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Alphabet.cs" />
-    <Compile Include="Core\Direction.cs" />
-    <Compile Include="Core\Abstracts\SequenceBase.cs" />
-    <Compile Include="Core\Interfaces\IAlphabet.cs" />
-    <Compile Include="Core\Interfaces\IStats.cs" />
-    <Compile Include="Core\Sequence.cs" />
+    <Compile Include="Direction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\FastaParser.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
