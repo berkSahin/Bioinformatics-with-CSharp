@@ -75,6 +75,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bioinfarmatics.Library\Bioinformatics.Library.csproj">
+      <Project>{94EBDCC9-3481-4EDB-9126-3CB732F1A0BE}</Project>
+      <Name>Bioinformatics.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,10 +9,10 @@ namespace Bioinfarmatics.Library.Core.Interfaces
     interface IStats
     {
         ulong Lenght();
-        void Sknewness();
+        void Sknewness(BasePair basePair, int frameSize);
         void CpG();
         void ZCurved();
         void OrUr();
-        void Frekans();
+        List<Tuple<char, int>> Frekans(char[] letters);
     }
 }
