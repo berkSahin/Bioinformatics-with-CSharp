@@ -1,18 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Bioinfarmatics.Library.Core.Interfaces
 {
-    interface IStats
+    internal interface IStats
     {
         ulong Lenght();
-        void Sknewness(BasePair basePair, int frameSize);
+
+        List<double> Sknewness(BasePair basePair, int frameSize, bool cumulative);
+
         void CpG();
-        void ZCurved();
+
+        List<Point3D> ZCurved(int frameSize);
+
         void OrUr();
+
         List<Tuple<char, int>> Frekans(char[] letters);
     }
 }

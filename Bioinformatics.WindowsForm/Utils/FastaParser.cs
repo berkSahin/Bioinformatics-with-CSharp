@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bioinfarmatics.Library.Utils
+namespace Bioinformatics.WindowsForm
 {
     public class FastaParser
     {
